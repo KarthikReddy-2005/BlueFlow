@@ -1,0 +1,177 @@
+import type { Restaurant } from "./types";
+
+export const buddysPlace: Restaurant = {
+  slug: "buddys-place",
+  name: "Buddy's Place",
+  tagline: "Home cooking, breakfast through supper, in the heart of Mount Pleasant.",
+  description: "A hometown family restaurant serving Southern and American favorites at 1470 S Main Street.",
+  cuisine: "Southern Family Restaurant",
+  priceRange: "$$",
+  timezone: "America/New_York",
+  heroImage: "/restaurants/buddys-place/hero.webp",
+  reservationImage: "/restaurants/buddys-place/gallery-3.webp",
+  orderingUrl: "https://toast.app/r/buddys-place-1470-s-main-st/order",
+  orderingServices: [
+    { label: "Toast pickup & delivery", url: "https://toast.app/r/buddys-place-1470-s-main-st/order" },
+    { label: "DoorDash", url: "https://www.doordash.com/store/buddys-place-1470-s-main-st-mt-pleasant-39795065/94493146/" },
+    { label: "Uber Eats", url: "https://www.ubereats.com/store/buddys-place-mount-pleasant/30IoVM-DQAOCD5xhopyASw" },
+  ],
+  primaryAction: { label: "Order Online", compactLabel: "Order", url: "https://toast.app/r/buddys-place-1470-s-main-st/order" },
+  design: {
+    heroPosition: "57% center",
+    heroAlign: "left",
+    primaryColor: "#5B211F",
+    secondaryColor: "#8F3D31",
+    accentColor: "#E3B66F",
+    backgroundColor: "#F7F0E3",
+    textColor: "#2B211C",
+  },
+  phone: "(704) 436-2044",
+  social: {
+    facebook: "https://www.facebook.com/buddysplacerestaurant",
+    instagram: "https://www.instagram.com/buddysplacerestaurant",
+    tiktok: "https://www.tiktok.com/@buddysplacerestaurant",
+  },
+  address: {
+    street: "1470 S Main St",
+    city: "Mount Pleasant",
+    state: "NC",
+    zipCode: "28124",
+    country: "USA",
+    mapsUrl: "https://maps.app.goo.gl/eWiRnH3ZozryvWBa6",
+  },
+  hours: [
+    { day: "Monday", hours: "Closed" },
+    { day: "Tuesday", hours: "6:00 AM to 8:30 PM" },
+    { day: "Wednesday", hours: "6:00 AM to 8:30 PM" },
+    { day: "Thursday", hours: "6:00 AM to 8:30 PM" },
+    { day: "Friday", hours: "6:00 AM to 8:30 PM" },
+    { day: "Saturday", hours: "6:00 AM to 8:30 PM" },
+    { day: "Sunday", hours: "6:00 AM to 8:30 PM" },
+  ],
+  featuredDishes: [
+    { id: "fried-chicken", name: "Fried Chicken", description: "Crispy fried chicken from Buddy's Famous Dinners.", price: "$12.95", image: "/restaurants/buddys-place/firedchicken.webp" },
+    { id: "hamburger-steak", name: "Hamburger Steak", description: "Grilled onions and brown gravy.", price: "$14.95", image: "/restaurants/buddys-place/hamburger.webp" },
+    { id: "fried-flounder", name: "Fried Flounder", description: "Two-piece flounder plate from the seafood menu.", price: "$16.00", image: "/restaurants/buddys-place/friedflounder.webp" },
+  ],
+  menu: [
+    {
+      id: "appetizers", name: "Appetizers", items: [
+        { id: "fried-pickles", name: "Fried Pickles", description: "Made in house, with homemade ranch.", price: "$7.75" },
+        { id: "onion-rings", name: "Homemade Onion Rings", price: "$9.30" },
+        { id: "chili-cheese-fries", name: "Chili Cheese Fries", price: "$9.50" },
+        { id: "potato-wedges", name: "Homemade Potato Wedges", price: "$8.20" },
+        { id: "hush-puppies", name: "Basket of Hush Puppies (12)", price: "$3.95" },
+        { id: "chicken-tenders-app", name: "Chicken Tenders (4)", description: "Cut fresh and hand breaded.", price: "$8.99" },
+      ],
+    },
+    {
+      id: "southern-dinners", name: "Buddy's Famous Dinners", items: [
+        { id: "quarter-fried-chicken", name: "1/4 Fried Chicken", price: "$12.95" },
+        { id: "half-fried-chicken", name: "1/2 Fried Chicken", price: "$16.95" },
+        { id: "hamburger-steak", name: "Hamburger Steak", description: "Grilled onions and brown gravy.", price: "$14.95" },
+        { id: "pork-chops", name: "Pork Chops (2)", price: "$14.95" },
+        { id: "country-fried-steak", name: "Country Fried Steak", description: "White gravy.", price: "$14.95" },
+        { id: "chicken-tenders-dinner", name: "Chicken Tenders (4)", price: "$13.95" },
+        { id: "barbeque-plate", name: "Bar-B-Que Plate", price: "$13.95" },
+        { id: "souvlaki-plate", name: "Souvlaki Plate", description: "Pork skewer, Greek salad, fries, pita and tzatziki.", price: "$16.95" },
+      ],
+    },
+    {
+      id: "burgers", name: "Burgers", items: [
+        { id: "big-boy", name: "Buddy's Big Boy Burger", description: "One pound, with cheese, lettuce, tomato, mayo and onion.", price: "$15.45" },
+        { id: "cheeseburger", name: "Cheeseburger (1/4 lb)", price: "$10.70" },
+        { id: "double-cheeseburger", name: "Double Cheeseburger (1/2 lb)", price: "$12.70" },
+        { id: "hamburger", name: "Hamburger (1/4 lb)", price: "$9.70" },
+        { id: "beyond-burger", name: "Beyond Burger", price: "$11.75" },
+      ],
+    },
+    {
+      id: "seafood", name: "Seafood", items: [
+        { id: "flounder", name: "2-Piece Flounder", price: "$16.00" },
+        { id: "calabash-shrimp", name: "Calabash Shrimp", price: "$15.45" },
+        { id: "jumbo-shrimp-6", name: "Jumbo Shrimp (6)", price: "$15.45" },
+        { id: "deviled-crab", name: "Deviled Crab (2)", price: "$13.75" },
+        { id: "mrs-p-combo", name: "Mrs. P's Combo", description: "Flounder, Calabash shrimp and deviled crab.", price: "$24.20" },
+        { id: "catfish-fillet", name: "Catfish Fillet", price: "$16.20" },
+      ],
+    },
+    {
+      id: "sandwiches", name: "Sandwiches & Local Favorites", items: [
+        { id: "fish-sandwich", name: "Fish Sandwich (Flounder)", description: "With tartar sauce and coleslaw.", price: "$11.50" },
+        { id: "chicken-filet", name: "Chicken Filet Sandwich", description: "Grilled or fried, with lettuce, tomato and mayo.", price: "$10.75" },
+        { id: "bbq-sandwich", name: "Bar-B-Que Sandwich", description: "On a bun with slaw.", price: "$8.95" },
+        { id: "hot-dog", name: "Hot Dog", description: "Mustard, onions, coleslaw and chili.", price: "$5.45" },
+        { id: "patty-melt", name: "Patty Melt", price: "$10.95" },
+        { id: "gyro-pita", name: "Gyro Pita", price: "$10.45" },
+      ],
+    },
+    {
+      id: "vegetable-plates", name: "Vegetable Plates & Sides", items: [
+        { id: "three-vegetables", name: "3 Vegetables Plate", price: "$10.90" },
+        { id: "four-vegetables", name: "4 Vegetables Plate", price: "$12.90" },
+        { id: "loaded-baked-potato", name: "Loaded Baked Potato", description: "Bacon, cheese and chives.", price: "$5.25" },
+        { id: "baked-sweet-potato", name: "Baked Sweet Potato", price: "$4.95" },
+      ],
+    },
+    {
+      id: "family-favorites", name: "Family Favorites", items: [
+        { id: "pepperoni-pizza", name: "Pepperoni Pizza", price: "$14.49" },
+        { id: "buddy-special-pizza", name: "Buddy's Special Pizza", description: "Sausage, beef, pepperoni, mushrooms, onion and pepper.", price: "$17.25" },
+        { id: "kid-cheeseburger", name: "Kid Cheeseburger", price: "$8.90" },
+        { id: "kid-chicken-nuggets", name: "Kid Chicken Nuggets (4)", price: "$7.95" },
+      ],
+    },
+    {
+      id: "desserts", name: "Desserts", items: [
+        { id: "triple-chocolate-cake", name: "Triple Chocolate Cake", price: "$6.25" },
+        { id: "carrot-cake", name: "Carrot Cake", price: "$6.25" },
+        { id: "coconut-cake", name: "Coconut Cake", price: "$6.25" },
+        { id: "key-lime-pie", name: "Key Lime Pie", price: "$4.95" },
+        { id: "peanut-butter-pie", name: "Peanut Butter Pie", price: "$4.95" },
+        { id: "ny-cheesecake", name: "NY Style Cheesecake", price: "$4.95" },
+      ],
+    },
+    {
+      id: "breakfast-favorites", name: "Breakfast & Drinks", description: "Ask Buddy's about the full breakfast menu and daily availability.", items: [
+        { id: "shrimp-and-grits", name: "Shrimp & Grits", description: "Breakfast and lunch only.", price: "$9.99" },
+        { id: "coffee", name: "Coffee", price: "$2.99" },
+        { id: "tea-16", name: "16 oz Tea", price: "$2.75" },
+        { id: "orange-juice", name: "Orange Juice", price: "$4.25" },
+      ],
+    },
+  ],
+  gallery: [
+    { src: "/restaurants/buddys-place/gallery-3.webp", alt: "Family gathered around a table at Buddy's Place", category: "people" },
+    { src: "/restaurants/buddys-place/gallery-4.webp", alt: "Neighbors enjoying a meal in Buddy's Place dining room", category: "people" },
+    { src: "/restaurants/buddys-place/gallery-2.webp", alt: "Buddy's Place staff serving plates from the kitchen", category: "people" },
+    { src: "/restaurants/buddys-place/gallery-1.webp", alt: "Plate of sauced meat with sides at Buddy's Place", category: "food" },
+    { src: "/restaurants/buddys-place/gallery-5.webp", alt: "Slice of coconut cake", category: "food" },
+    { src: "/restaurants/buddys-place/gallery-6.webp", alt: "Plate of seared scallops", category: "food" },
+  ],
+  // Secondary listing reports this Google aggregate; recheck before publication.
+  rating: 4.5,
+  ratingLabel: "Google rating",
+  reviewCount: 1289,
+  googleReviewsUrl: "https://maps.app.goo.gl/eWiRnH3ZozryvWBa6",
+  about: {
+    heading: "A hometown place for a good meal",
+    description: "Buddy's Place is a local family restaurant in Mount Pleasant, serving breakfast, lunch and dinner. The menu brings together homestyle Southern dinners, burgers, seafood and familiar sides. Call with questions or order online for pickup and delivery.",
+    image: "/restaurants/buddys-place/gallery-2.webp",
+  },
+  copy: {
+    featuredHeading: "Some Buddy's favorites.",
+    featuredDescription: "Fried chicken, hamburger steak and fried flounder are just a few ways to start.",
+    menuHeading: "Find your kind of comfort food.",
+    menuDescription: "Browse Buddy's favorites here, then check the ordering service for current availability and prices.",
+    galleryHeading: "Good food. Good company.",
+    galleryDescription: "Good meals and familiar faces in Mount Pleasant.",
+    reservationHeading: "Bring Buddy's to your table.",
+    reservationDescription: "Order directly through Toast, or choose DoorDash or Uber Eats.",
+  },
+  seo: {
+    title: "Buddy's Place | Southern Home Cooking in Mount Pleasant, NC",
+    description: "Find Buddy's Place in Mount Pleasant, NC for breakfast, lunch and dinner. Browse Southern favorites, call, get directions or order online.",
+    image: "/restaurants/buddys-place/hero.webp",
+  },
+};
